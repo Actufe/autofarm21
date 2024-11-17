@@ -37,6 +37,8 @@ Text = texto
 })
 end
 
+UIS.InputBegan:Connect(function(key)
+   if key.KeyCode == Enum.KeyCode.RightShift and YourShitp ~= nil then
        notify("began autofarming")
        while true do
        notify("cycle")
